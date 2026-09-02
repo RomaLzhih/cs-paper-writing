@@ -1,0 +1,21 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "cs-paper-writing",
+  "description": "Writing skills for CS papers on parallel algorithms and data structures, built from a corpus of 119 peer-reviewed papers.",
+  "owner": {
+    "name": "RomaLzhih"
+  },
+  "plugins": [
+    {
+      "name": "academic-writing",
+      "description": "Review, polish, paraphrase, or suggest edits to academic prose using writing patterns extracted from a corpus of well-regarded CS papers. Six ordered revision passes, 59 structural patterns, and a mechanical linter, all calibrated against corpus-wide measurements.",
+      "version": "1.0.0",
+      "author": {
+        "name": "RomaLzhih"
+      },
+      "category": "productivity",
+      "keywords": ["writing", "academic", "paper", "editing", "latex"],
+      "source": "./plugins/academic-writing"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "name": "academic-writing",
+  "description": "Review, polish, paraphrase, or suggest edits to academic prose using writing patterns extracted from a corpus of well-regarded CS papers.",
+  "version": "1.0.0",
+  "author": {
+    "name": "RomaLzhih"
+  },
+  "keywords": ["writing", "academic", "paper", "editing", "latex"]
+}

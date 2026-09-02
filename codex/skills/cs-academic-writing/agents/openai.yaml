@@ -1,0 +1,4 @@
+interface:
+  display_name: "CS Academic Writing"
+  short_description: "Polish and draft precise CS paper prose"
+  default_prompt: "Use $cs-academic-writing to polish this CS paper passage for precise wording, grammar, clarity, and flow without changing its technical meaning."
