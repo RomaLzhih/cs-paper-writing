@@ -50,15 +50,25 @@ the rewrite, or the rewrite is wrong.
 /plugin install academic-writing@cs-paper-writing
 ```
 
-This repo is **private**, so the machine needs GitHub access first — an SSH key on the account,
-or a token in a git credential helper. Verify with `ssh -T git@github.com`. If the `owner/repo`
-shorthand fails to authenticate, pass the SSH URL instead:
+This repo is **private**, so the machine needs GitHub access first: an SSH key on the account,
+or a token in a git credential helper. Verify with `ssh -T git@github.com` — it should greet you
+by username. Claude Code detects the private repo and clones over SSH on its own; the
+`owner/repo` shorthand above is all you need. If it still fails to authenticate, name the SSH
+URL outright:
 
 ```
 /plugin marketplace add git@github.com:RomaLzhih/cs-paper-writing.git
 ```
 
-Update later with `/plugin marketplace update cs-paper-writing`.
+Update later with `/plugin marketplace update cs-paper-writing`, and confirm what registered
+with `claude plugin details academic-writing@cs-paper-writing`.
+
+The same flow works outside the TUI, which is handy for scripting a new machine:
+
+```bash
+claude plugin marketplace add RomaLzhih/cs-paper-writing
+claude plugin install academic-writing@cs-paper-writing
+```
 
 ### Either agent — via `install.sh`
 
